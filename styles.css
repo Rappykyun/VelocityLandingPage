@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+section {
+  padding-top: 70px; 
+}
+
+#header-img {
+  width: 160px;
+  height: 60px;
+  border-radius: 5%;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 850px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: #ff6600;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+/* Hero Section */
+#features {
+  background-image: url('https://source.unsplash.com/1920x1080/?sports-car');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#features h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+#features p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.btn {
+  background-color: #161414;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px; 
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.btn:hover {
+  background-color: white; 
+  transform: scale(1.05); 
+  color: black;
+}
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  margin: 10px 0;
+}
+
+.feature h3 {
+  margin-bottom: 5px;
+}
+
+h2{
+  text-align: center;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#gallery {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#testimonials {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.testimonial {
+  background-color: #e2dcdc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  margin: 10px 0;
+}
+
+#form {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#form input[type='submit'] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form input[type='submit']:hover {
+  background-color: #ff6600;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+}

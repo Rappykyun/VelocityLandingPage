@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velocity Sports Car</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <div>
+        <a href="#features"><img id="header-img" src="https://seekvectorlogo.com/wp-content/uploads/2023/05/velocity-automotive-vector-logo.png" alt="Velocity Sports Car Logo" /></a>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="#features"><i class="fas fa-bolt"></i> Features</a></li>
+        <li><a class="nav-link" href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+        <li><a class="nav-link" href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section  id="features">
+      <h1>Experience the Power of Velocity</h1>
+      <p>Our sports car delivers unmatched performance and style.</p>
+      <a href="#features" class="btn">Explore Features &rarr;</a>
+    </section>
+    <section >
+      <h2>Unleash the Beast</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Blistering Speed</h3>
+          <p>
+            With a top speed of 200 mph, our sports car will leave others in the dust.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-cog"></i>
+          <h3>Advanced Engineering</h3>
+          <p>
+            Our cutting-edge technology ensures superior performance and handling.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-car"></i>
+          <h3>Sleek Design</h3>
+          <p>
+            The aerodynamic body and stunning lines will turn heads wherever you go.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/500x300/?sports-car" alt="Gallery Image 1" />
+        <img src="https://source.unsplash.com/500x300/?luxury-car" alt="Gallery Image 2" />
+        <img src="https://source.unsplash.com/500x300/?red-sports-car" alt="Gallery Image 3" />
+        <img src="https://source.unsplash.com/500x300/?race-car" alt="Gallery Image 4" />
+      </div>
+    </section>
+
+      <h2>Watch Our Video</h2>
+      <div class="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NMThdHhrLoM" title="Velocity Sports Car Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <blockquote>
+            "This car is a dream come true! The power and handling are exceptional."
+          </blockquote>
+          <cite>- John Doe</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "Driving the Velocity is an exhilarating experience. It's truly a work of art."
+          </blockquote>
+          <cite>- Jane Smith</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "I've owned many sports cars, but the Velocity is in a league of its own."
+          </blockquote>
+          <cite>- Michael Johnson</cite>
+        </div>
+      </div>
+    </section>
+      <h2>Contact Us</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input id="name" type="text" name="name" placeholder="Your Name" required />
+        <input id="email" type="email" name="email" placeholder="Your Email Address" required />
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        <input id="submit" type="submit" value="Send Message" />
+      </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Velocity Sports Car</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const headerHeight = document.getElementById('header').offsetHeight; 
+        const targetId = this.getAttribute('href').substring(1); 
+        const targetSection = document.getElementById(targetId); 
+        const targetOffset = targetSection.offsetTop - headerHeight; 
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+        });
+    });
+});
+  </script>
+</body>
+</html>
